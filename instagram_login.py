@@ -5,7 +5,7 @@ from creditentials import username, password
 
 
 
-class InstaUnfollowers:
+class Instalogin:
     def __init__(self, username, password):
         self.driver = webdriver.Chrome()
         self.driver.get("https://instagram.com")
@@ -19,8 +19,8 @@ class InstaUnfollowers:
 
 
 
-my_bot = InstaUnfollowers(username, password)
-my_bot.InstaUnfollowers()
+my_bot = Instalogin(username, password)
+my_bot.Instalogin()
 try:
     my_bot.driver.close()
 except:
