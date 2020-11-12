@@ -7,7 +7,7 @@ from creditentials import username, password
 
 class InstaUnfollowers:
     def __init__(self, username, password):
-        self.driver = webdriver.Chrome("C:/Users/turtleman/Desktop/chromedriver")
+        self.driver = webdriver.Chrome()
         self.driver.get("https://instagram.com")
         sleep(2)
         username_type = self.driver.find_element_by_xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input")
@@ -20,7 +20,7 @@ class InstaUnfollowers:
 
 
 my_bot = InstaUnfollowers(username, password)
-my_bot.get_unfollowers()
+my_bot.InstaUnfollowers()
 try:
     my_bot.driver.close()
 except:
