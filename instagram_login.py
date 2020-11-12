@@ -10,7 +10,6 @@ class InstaUnfollowers:
         self.driver = webdriver.Chrome("C:/Users/turtleman/Desktop/chromedriver")
         self.driver.get("https://instagram.com")
         sleep(2)
-        # instagram login
         username_type = self.driver.find_element_by_xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input")
         username_type.send_keys(username)
         password_type = self.driver.find_element_by_xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[2]/div/label/input")
