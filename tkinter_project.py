@@ -1,6 +1,5 @@
 import os
 from tkinter import *
-from tkinter import ttk
 import boto3
 
 def click():
