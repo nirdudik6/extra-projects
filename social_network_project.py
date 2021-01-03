@@ -7,7 +7,7 @@ def instagram():
     def instagram_login():
         class InstaUnfollowers:
             def __init__(self, username, password):
-                self.driver = webdriver.Chrome("C:/Users/ydgam/Desktop/chromedriver")
+                self.driver = webdriver.Chrome()
                 self.driver.get("https://instagram.com")
                 sleep(2)
                 # instagram login
@@ -51,7 +51,7 @@ def instagram():
 def facebook():
     class InstaUnfollowers:
         def __init__(self):
-            self.driver = webdriver.Chrome("C:/Users/ydgam/Desktop/chromedriver")
+            self.driver = webdriver.Chrome()
             self.driver.get("https://facebook.com")
             sleep(2)
             username_type = self.driver.find_element_by_xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input")
@@ -71,7 +71,7 @@ def facebook():
         my_bot.driver.close()
 
 def whatsapp():
-    driver = webdriver.Chrome(executable_path=r'C:/Users/ydgam/Desktop/chromedriver')
+    driver = webdriver.Chrome(executable_path=r'')
     driver.get("https://web.whatsapp.com/")
 
 def close_window():
