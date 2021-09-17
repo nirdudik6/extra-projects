@@ -141,12 +141,12 @@ while (True):
             opt=input("Enter your choise:\n1.show the messages that sent\n2.delete the list of messages that sent\n")
             if opt=="1":
                 print("Here's the messages that sent so far:\n")
-                path=r"C:/Users/yoval/PycharmProjects/pythonProject1/nir's projects/pywhatkit_dbs.txt"
+                path=r"C:/"
                 file=open(path, "r")
                 print(file.read())
                 break
             elif opt=="2":
-                path = r"C:/Users/yoval/PycharmProjects/pythonProject1/nir's projects/pywhatkit_dbs.txt"
+                path = r"C:/"
                 file = open(path, "w")
                 print("done!")
                 break
@@ -157,7 +157,7 @@ while (True):
     elif route=="4":
         class Instalogin:
             def __init__(self, username, password):
-                self.driver = webdriver.Chrome('C:/Users/yoval/Desktop/chromedriver')
+                self.driver = webdriver.Chrome()
                 self.driver.get("https://instagram.com")
                 sleep(2)
                 username_type = self.driver.find_element_by_xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input")
