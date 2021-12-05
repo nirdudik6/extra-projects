@@ -20,7 +20,7 @@ while (True):
         msg = "I have " + mazik + ", the type is " + kind + ", gel: " + gel + ", home type: " + home + ", other information: " + note
         hour = int(input("enter the hour of sending:\n"))
         min = int(input("enter the minutes of sending:\n"))
-        pywhatkit.sendwhatmsg("+97252-8424210", msg, hour, min)
+        pywhatkit.sendwhatmsg(his phone, msg, hour, min)
         print("sent!")
         break
     elif mazik == "Ants" or mazik == "ants":
@@ -30,7 +30,7 @@ while (True):
         msg= "I have " + mazik + ", the type is " + kind + ", home type: " + house + ", other information: " + addition
         hour = int(input("enter the hour of sending:\n"))
         min = int(input("enter the minutes of sending:\n"))
-        pywhatkit.sendwhatmsg("+97252-8424210", msg, hour, min)
+        pywhatkit.sendwhatmsg(his phone, msg, hour, min)
         print("sent!")
         break
     elif mazik == "Other" or mazik == "other":
@@ -40,7 +40,7 @@ while (True):
         msg = "I have " + mazik + ", the type is " + kind + ", home type: " + house + ", other information: " + addition
         hour = int(input("enter the hour of sending:\n"))
         min = int(input("enter the minutes of sending:\n"))
-        pywhatkit.sendwhatmsg("+97252-8424210", msg, hour, min)
+        pywhatkit.sendwhatmsg(his phone, msg, hour, min)
         print("sent!")
         break
     else:
