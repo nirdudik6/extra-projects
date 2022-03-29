@@ -6,7 +6,7 @@ while True:
     options=input("what do you want to do?\n1.see stock's information\n2.change stock's list\n")
     if options=="1":
         stock=input("enter the stock's symobol you are looking for:\n")
-        driver = webdriver.Chrome('C:/Users/turtl/Downloads/chromedriver')
+        driver = webdriver.Chrome(#chromedriver route)
         driver.get("https://finviz.com/quote.ashx?t="+ stock)
         sleep(2)
         exit=input("Do you want to exit?(yes/no)\n")
@@ -18,7 +18,7 @@ while True:
     elif options=="2":
         print("here is your stock's list:\n")
         sleep(2)
-        stock_list = 'C:/Users/turtl/Downloads/stock_market.txt'
+        stock_list = #t.x.t route
         file1 = open(stock_list, "r")
         print(file1.read())
         action=input("What do you want to do?\n1.add\n2.remove\n")
@@ -39,7 +39,7 @@ while True:
                 print("this stock isn't in the list!\n")
                 add = input("Do you want to add this stock?\n")
                 if add == "yes":
-                    stock_list = 'C:/Users/turtl/Downloads/stock_market.txt'
+                    stock_list = #t.x.t route
                     fin = open(stock_list, "a")
                     fin.write("\n" + stock)
                     fin.close()
@@ -57,13 +57,13 @@ while True:
                     continue
         elif action=="2":
             remove= input("Enter the symbol that you want to remove:\n")
-            stock_list = 'C:/Users/turtl/Downloads/stock_market.txt'
+            stock_list = #t.x.t route
             stock_list = open(stock_list, "r")
             stock_list = stock_list.read().splitlines()
             if remove in stock_list:
-                with open("C:/Users/turtl/Downloads/stock_market.txt", "r") as f:
+                with open(#t.x.t route, "r") as f:
                     lines = f.readlines()
-                with open("C:/Users/turtl/Downloads/stock_market.txt", "w") as f:
+                with open(#t.x.t route, "w") as f:
                     for line in lines:
                         if line.strip("\n") != remove:
                             f.write(line)
