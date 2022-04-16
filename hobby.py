@@ -5,14 +5,14 @@ import os
 
 def runescape():
     sleep(1)
-    os.system('C:/ProgramData/Jagex/launcher/rs2client')
+    os.system(#program link)
     window.destroy()
     exit()
 
 def trading():
     window.destroy()
     sleep(1)
-    driver = webdriver.Chrome('C:/Users/turtl/Downloads/chromedriver')
+    driver = webdriver.Chrome(#chromedriver link)
     driver.get("https://tradingview.com")
     window.destroy()
 
