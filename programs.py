@@ -4,7 +4,7 @@ from time import sleep
 
 def TEAMS():
     sleep(1)
-    os.system('C:/Users/nird/AppData/Local/Microsoft/Teams/current/Teams')
+    os.system(#program link)
     window.destroy()
     exit()
 
@@ -12,7 +12,7 @@ def TEAMS():
 
 def SPOTIFY():
     sleep(1)
-    os.system('C:/Users/nird/AppData/Roaming/Spotify/Spotify')
+    os.system(#program link)
     window.destroy()
     exit()
 
