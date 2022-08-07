@@ -1,0 +1,17 @@
+while(True):
+    print("hey! lets check your hight!")
+    choose = input("choose one option:\n1.ft to CM\n2.CM to ft\n")
+    if choose=="1":
+        ft = input("write your number of ft:\n")
+        CM = int(ft) * 30.48
+        print("your hight in CM is:\n" + str(CM))
+    elif choose=="2":
+        CM = input("write your number of CM:\n")
+        ft = int(CM) / 30.48
+        print("your hight in ft is:\n" + str(ft))
+    else:
+        print("wrong answer!!")
+        continue
+    if (input("do you want to exit? y/n\n") == "y"):
+        break
+print("thanks and bye bye...")
